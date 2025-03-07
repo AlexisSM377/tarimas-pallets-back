@@ -1,0 +1,42 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "About"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nameCompany": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "description": {
+      "type": "blocks",
+      "required": true
+    },
+    "mission": {
+      "type": "text",
+      "required": true
+    },
+    "vision": {
+      "type": "text"
+    },
+    "values": {
+      "type": "blocks",
+      "required": true
+    }
+  }
+}
